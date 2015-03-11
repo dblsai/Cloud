@@ -1,0 +1,38 @@
+#viewport {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    perspective: 400; 
+    position: absolute;
+    right: 0;
+    top: 0;
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.28, rgb(69,132,180)),
+            color-stop(0.64, rgb(31,71,120))
+        );
+}
+
+#world {
+    height: 512px;
+    left: 50%;
+    margin-left: -256px;
+    margin-top: -256px;
+    position: absolute;
+    top: 50%;
+    transform-style: preserve-3d;
+    width: 512px;
+    background-color: rgba( 255, 0, 0, .2 );
+}
+
+#caption{
+    position: absolute;
+    z-index: 10;
+}
+
+#caption a:link{ color: #FFF; text-decoration: none;}
+#caption a:hover{color: #CCC;}
+#caption a:visited{color: #FFF;}
+#caption a:active{color: #FFF;}
